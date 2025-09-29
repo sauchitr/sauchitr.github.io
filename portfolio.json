@@ -1,43 +1,37 @@
 {
   "name": "Sawan Singh Parihar",
-  "label": "Software Engineer II",
-  "image_path": "img/default-image.png",
+  "label": "Sr Software Engineer",
+  "image_path": "portfolio_media/profile.jpg",
   "contact": {
     "email": "sawansparihar@gmail.com",
     "phone": "+91 9479028292",
     "location": "Mumbai, Maharashtra, India"
   },
-  "summary": "Experienced software engineer specialising in ERP implementations with expertise in manufacturing, retail, CRM and logistics domains. Proficient in system configuration, process design, and integration of regulatory compliance features. Skilled at collaborating with international stakeholders, optimising workflows, and delivering scalable, high-performance solutions across diverse industries.",
-  "base_url": "https://sauchitr.github.io/",
+  "summary": "Experienced software engineer specialising in ERP implementations with expertise in manufacturing, retail, CRM, HR and logistics domains. Proficient in system configuration, process design, and integration of regulatory compliance features. Skilled at collaborating with international stakeholders, optimising workflows, and delivering scalable, high-performance solutions across diverse industries.",
+  "base_url": "sauchitr.github.io",
   "social_links": [
     {
-      "label": "Personal Website",
-      "url": "https://sample.com",
-      "svg_path": "img/globe.svg"
-    },
-    {
-      "label": "First Social",
-      "url": "https://sample.com",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/sawan-singh-parihar/",
       "svg_path": "img/linkedin.svg"
     },
     {
-      "label": "Second Social",
-      "url": "https://sample.com",
+      "label": "GitHub",
+      "url": "https://github.com/sauchitr/",
       "svg_path": "img/github.svg"
     }
   ],
   "work_experience": [
     {
-      "company": "Latest Job",
-      "position": "Position One",
-      "url": "https://sample.com",
-      "start_date": "01/01/2020",
+      "company": "EACTIVE TECHNOLOGIES",
+      "position": "Sr. Software Engineer",
+      "start_date": "01/09/2023",
       "end_date": "Present",
-      "summary": "Short summary about present job and what the position entails",
       "highlights": [
-        "First Duty of Current Job",
-        "Second Duty of Current Job",
-        "Third Duty of Current Job"
+        "Led multiple ERP implementations across manufacturing, retail, CRM, and logistics.",
+        "Collaborated with international clients (Bhutan, Kenya, Zambia, Mauritius) for requirement gathering & process design.",
+        "Directed a 12-member team, ensuring timely delivery and optimized workflows.",
+        "Configured systems for regulatory compliance and enhanced operational efficiency."
       ]
     },
     {
