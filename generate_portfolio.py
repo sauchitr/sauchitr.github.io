@@ -5,7 +5,7 @@ from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
 # Load JSON data
-with Path("portfolio-corey.json").open(encoding="utf-8") as f:
+with Path("portfolio.json").open(encoding="utf-8") as f:
     data = json.load(f)
 
 # Add any extra context if needed
@@ -19,7 +19,7 @@ if "social_links" in data:
 
 # Set up Jinja environment
 env = Environment(loader=FileSystemLoader("."), autoescape=True)
-index_template = env.get_template("index.html")
+index_template = env.get_template("index_template.html")
 resume_template = env.get_template("resume_template.html")
 
 # Render the template with the data
