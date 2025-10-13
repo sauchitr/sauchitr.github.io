@@ -35,28 +35,27 @@
       ]
     },
     {
-      "company": "Previous Job",
-      "position": "Position Two",
-      "url": "https://sample.com",
-      "start_date": "01/01/2010",
-      "end_date": "01/01/2020",
-      "summary": "Short summary about previous job and what that position entailed",
+      "company": "Full Creative",
+      "position": "Junior Operations Analyst",
+      "start_date": "01/06/2021",
+      "end_date": "18/12/2021",
       "highlights": [
-        "First Duty of Previous Job",
-        "Second Duty of Previous Job",
-        "Third Duty of Previous Job"
+        "Analyzed large volumes of staffing data using Google Spreadsheets for efficient workforce planning.",
+        "Optimized staffing decisions through data-driven insights, improving operational efficiency.",
+        "Monitored Service Level Queues on AWS, ensuring uninterrupted daily operations."
       ]
     }
   ],
   "projects": [
     {
-      "title": "My First Project",
-      "summary": "Short summary about my first project",
+      "title": "Human Resource Management System Implementation",
       "url": "https://sample.com",
       "highlights": [
-        "First Highlight of Project One",
-        "Second Highlight of Project One",
-        "Third Highlight of Project One"
+        "Designed and deployed multi-shift system with automated working hours tracking",
+        "Built attendance & shift reports (day-wise, shift-wise, total hours)",
+        "Automated Compensatory Off & Incentive allocation based on threshold working hours",
+        "Developed multi-level workflows for attendance and leave approvals, role & permission based",
+        "Configured Text and Whatsapp based notification on late comings and birthdays"
       ],
       "images": [
         {
@@ -98,75 +97,40 @@
       ]
     }
   ],
-  "volunteer_experience": [
-    {
-      "organization": "Latest Organization",
-      "position": "Position One",
-      "url": "https://sample.com",
-      "start_date": "01/01/2020",
-      "end_date": "Present",
-      "summary": "Short summary about present volunteer work",
-      "highlights": [
-        "First Duty of Current Organization",
-        "Second Duty of Current Organization",
-        "Third Duty of Current Organization"
-      ]
-    },
-    {
-      "organization": "Previous Organization",
-      "position": "Position Two",
-      "url": "https://sample.com",
-      "start_date": "01/01/2010",
-      "end_date": "01/01/2020",
-      "summary": "Short summary about previous volunteer work",
-      "highlights": [
-        "First Duty of Previous Organization",
-        "Second Duty of Previous Organization",
-        "Third Duty of Previous Organization"
-      ]
-    }
-  ],
+  
   "education": [
     {
-      "institution": "Institution One",
-      "location": "Institution One Location",
-      "url": "https://sample.com",
+      "institution": "Raipur Institute of Technology",
+      "location": "Raipur, Chhattisgarh",
+      "url": "https://rit.edu.in/",
       "degrees": [
-        "Master of Science in Computer Science",
-        "Minor in Mathematics"
+        "B.Tech. Civil Engineering"
       ],
-      "honors": ["Outstanding Student Award", "Dean's List"],
-      "gpa_cumulative": "3.5",
-      "gpa_major": "4.0",
-      "graduation_date": "01/01/2005"
+      "per_scored": "68.47%",
+      "graduation_date": "31/12/2020"
     },
     {
-      "institution": "Institution Two",
-      "location": "Institution Two Location",
-      "url": "https://sample.com",
-      "degrees": ["Bachelor of Science in Physics"],
-      "honors": ["Scholarship Recipient"],
-      "gpa_cumulative": "3.2",
-      "gpa_major": "3.9",
-      "graduation_date": "01/01/2000"
+      "institution": "D.A.V. Public School",
+      "location": "Chirimiri, M.C.B., Chhattisgarh",
+      "url": "https://davpschirimiri.com",
+      "degrees": ["Senior Secondary"],
+      "per_scored": "79.8%",
+      "graduation_date": "01/04/2015"
     }
   ],
-  "skills": [
-    {
-      "name": "My First Skill",
-      "proficiency": 100,
-      "proficiency_label": "Proficiency Level"
-    },
-    {
-      "name": "My Second Skill",
-      "proficiency": 80,
-      "proficiency_label": "Proficiency Level"
-    }
-  ],
+
+  "skills": {
+    "lanuguages": ["Python", "JavaScript", "SQL"],
+    "frameworks/Libraries": ["Django", "Bootstrap", "Pandas", "Matplotlib", "Frappe", "ERPNext", "jQuery", "Vue.js", "Frappe HR", "Beautiful Soup"],
+    "tools/Platforms": ["Google Sheets", "Microsoft Office", "Git", "GitHub", "PyCharm", "Linux", "VSCode", "DBeaver", "HeidiSQL"],
+    "databases": ["MySQL", "SQLite", "PostgreSQL", "MariaDB"]
+
+  },
+
   "interests": [
     {
-      "name": "My First Hobby",
-      "summary": "Short summary about my first Hobby",
+      "name": "Cooking",
+      "summary": "I love to cook, but I am not a great one!",
       "images": [
         {
           "img_path": "https://picsum.photos/600/338?random=7",
@@ -179,8 +143,8 @@
       ]
     },
     {
-      "name": "My Second Hobby",
-      "summary": "Short summary about my second hobby",
+      "name": "Reading",
+      "summary": "My library is full of self improvement books but I have a knack for Indian ancient-history",
       "images": [
         {
           "img_path": "https://picsum.photos/600/338?random=9",
@@ -196,23 +160,11 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Native speaker"
+      "fluency": "Professional"
     },
     {
-      "language": "American Sign Language",
-      "fluency": "Professional Working Proficiency"
-    }
-  ],
-  "references": [
-    {
-      "name": "Person One",
-      "relation": "Previous Boss",
-      "reference": "Some nice things that Person One said about you, your work ethic, and how you provided value to their team."
-    },
-    {
-      "name": "Person Two",
-      "relation": "Previous Coworker",
-      "reference": "More kind things that Person Two said about you, what it was like working with you, and things you've accomplished."
+      "language": "Hindi",
+      "fluency": "Native Speaker"
     }
   ]
 }

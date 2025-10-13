@@ -242,10 +242,9 @@
                       {% for hon in edu.honors %}<li>{{ hon }}</li>{% endfor %}
                     </ul>
                   {% endif %}
-                  {% if edu.gpa_major or edu.gpa_cumulative or edu.graduation_date %}
+                  {% if edu.per_scored or edu.graduation_date %}
                     <p>
-                      {% if edu.gpa_major %}<span class="block">GPA in Major: {{ edu.gpa_major }}</span>{% endif %}
-                      {% if edu.gpa_cumulative %}<span class="block">Cumulative GPA: {{ edu.gpa_cumulative }}</span>{% endif %}
+                      {% if edu.per_scored %}<span class="block">Percentage Scored: {{ edu.per_scored }}</span>{% endif %}
                       {% if edu.graduation_date %}<span class="block">Graduation Date: {{ edu.graduation_date }}</span>{% endif %}
                     </p>
                   {% endif %}
@@ -256,19 +255,17 @@
 
           {% if skills %}
             <section>
-              <h2 class="section-heading">Skills</h2>
+              <h2 class="section-heading">
+                Skills
+              </h2>
               <ul class="unstyled-list">
-                {% for skill in skills %}
+                {% for category, items in skills.items() %}
                   <li>
-                    <h3>{{ skill.name }}</h3>
-                    <div class="skill-bar">
-                      <div class="skill-bar-fill w-{{ skill.proficiency }}"
-                           role="meter"
-                           aria-valuenow="{{ skill.proficiency }}"
-                           aria-valuemin="0"
-                           aria-valuemax="100">
-                        <span class="skill-bar-label">{{ skill.proficiency_label }}</span>
-                      </div>
+                    <h3>
+                      {{ category | capitalize }}
+                    </h3>
+                    <div>
+                      {{ items | join(', ') }}
                     </div>
                   </li>
                 {% endfor %}
