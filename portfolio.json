@@ -52,11 +52,11 @@
       "summary": "Frappe, ERPNext, Python, Vue.js, JavaScript",
       "url": "https://sample.com",
       "highlights": [
-        "Designed and deployed multi-shift system with automated working hours tracking",
-        "Built attendance & shift reports (day-wise, shift-wise, total hours)",
-        "Automated Compensatory Off & Incentive allocation based on threshold working hours",
-        "Developed multi-level workflows for attendance and leave approvals, role & permission based",
-        "Configured Text and Whatsapp based notification on late comings and birthdays"
+        "Designed and deployed multi-shift system with automated working hours tracking.",
+        "Built attendance & shift reports (day-wise, shift-wise, total hours).",
+        "Automated Compensatory Off & Incentive allocation based on threshold working hours.",
+        "Developed multi-level workflows for attendance and leave approvals, role & permission based.",
+        "Configured Text and Whatsapp based notification on late comings and birthdays."
       ],
       "images": [
         {
@@ -79,7 +79,7 @@
       "url": "https://sample.com",
       "highlights": [
         "Customized POS screen with rate, tax, and pricing rule integration.",
-        "Modified billing system to meet Bhutans tax compliance.",
+        "Modified billing system to meet Bhutan's tax compliance.",
         "Implemented automated tax applicability based on customer membership.",
         "Configured a custom Costing Module for Pricing."
       ],
@@ -101,7 +101,7 @@
       "highlights": [
         "Implemented a complete ERP system for a homecare services business supporting elderly clients, integrating workforce management, client care, and operational workflows.",
         "Managed multi-role coordination and automation for attendants, nurses, and delivery staff, including membership-based billing, consolidated sales invoicing, and real-time service tracking.",
-        "Developed a mobile application (AppE) with daily task tracking, timesheets, and geo-location-based visit logging and attendance monitoring to enhance field workforce efficiency."
+        "Developed a mobile application for daily task tracking, timesheets, and geo-location-based visit logging and attendance monitoring to enhance field workforce efficiency."
       ],
       "images": [
         {
@@ -123,7 +123,7 @@
       "summary": "Frappe, ERPNext, Python, Vue.js, JavaScript",
       "url": "https://sample.com",
       "highlights": [
-        "Designed a permission-based unified form handling 4 logistics operations.",
+        "Designed a permission-based unified form which handles 4 logistics operations.",
         "Automated journal entries for Proof of Delivery, Log Sheet & related transactions.",
         "Developed a centralized tracking report covering all logistics operations."
       ],
@@ -156,7 +156,7 @@
 
   "skills": {
     "lanuguages": ["Python", "JavaScript", "SQL"],
-    "frameworks/Libraries": ["Django", "Bootstrap", "Pandas", "Matplotlib", "Frappe", "ERPNext", "jQuery", "Vue.js", "Frappe HR", "Beautiful Soup"],
+    "frameworks/Libraries": ["Django", "Bootstrap", "Pandas", "Matplotlib", "Frappe", "ERPNext", "jQuery", "Vue.js", "Frappe HR", "Beautiful Soup", "Appe"],
     "tools/Platforms": ["Google Sheets", "Microsoft Office", "Git", "GitHub", "PyCharm", "Linux", "VSCode", "DBeaver", "HeidiSQL"],
     "databases": ["MySQL", "SQLite", "PostgreSQL", "MariaDB"]
 
