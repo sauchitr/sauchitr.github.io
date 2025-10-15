@@ -49,6 +49,7 @@
   "projects": [
     {
       "title": "Human Resource Management System Implementation",
+      "summary": "Frappe, ERPNext, Python, Vue.js, JavaScript",
       "url": "https://sample.com",
       "highlights": [
         "Designed and deployed multi-shift system with automated working hours tracking",
@@ -59,27 +60,48 @@
       ],
       "images": [
         {
-          "img_path": "https://picsum.photos/600/338?random=1",
-          "caption": "Image Caption 1"
+          "img_path": "portfolio_media/day_wise.png",
+          "caption": "Daywise Report"
         },
         {
-          "img_path": "https://picsum.photos/600/338?random=2",
-          "caption": "Image Caption 2"
+          "img_path": "portfolio_media/shift_wise.png",
+          "caption": "Shiftwise Report"
         },
         {
-          "img_path": "https://picsum.photos/600/338?random=3",
-          "caption": "Image Caption 3"
+          "img_path": "portfolio_media/biometric_report.png",
+          "caption": "Worked Hour Report"
         }
       ]
     },
     {
-      "title": "My Second Project",
-      "summary": "Short summary about my second project",
+      "title": "TRADE & POS CUSTOMIZATION",
+      "summary": "Frappe, ERPNext, Python, Vue.js, JavaScript",
       "url": "https://sample.com",
       "highlights": [
-        "First Highlight of Project Two",
-        "Second Highlight of Project Two",
-        "Third Highlight of Project Two"
+        "Customized POS screen with rate, tax, and pricing rule integration.",
+        "Modified billing system to meet Bhutans tax compliance.",
+        "Implemented automated tax applicability based on customer membership.",
+        "Configured a custom Costing Module for Pricing."
+      ],
+      "images": [
+        {
+          "img_path": "portfolio_media/pos.png",
+          "caption": "POS Customization"
+        },
+        {
+          "img_path": "portfolio_media/purchase_costing.png",
+          "caption": "Costing Module"
+        }
+      ]
+    },
+    {
+      "title": "HOME CARE SERVICE",
+      "summary": "Frappe, ERPNext, Python, Vue.js, JavaScript, Appe",
+      "url": "https://sample.com",
+      "highlights": [
+        "Implemented a complete ERP system for a homecare services business supporting elderly clients, integrating workforce management, client care, and operational workflows.",
+        "Managed multi-role coordination and automation for attendants, nurses, and delivery staff, including membership-based billing, consolidated sales invoicing, and real-time service tracking.",
+        "Developed a mobile application (AppE) with daily task tracking, timesheets, and geo-location-based visit logging and attendance monitoring to enhance field workforce efficiency."
       ],
       "images": [
         {
@@ -94,6 +116,19 @@
           "img_path": "https://picsum.photos/600/338?random=6",
           "caption": "Image Caption 6"
         }
+      ]
+    },
+    {
+      "title": "LOGISTICS AUTOMATION",
+      "summary": "Frappe, ERPNext, Python, Vue.js, JavaScript",
+      "url": "https://sample.com",
+      "highlights": [
+        "Designed a permission-based unified form handling 4 logistics operations.",
+        "Automated journal entries for Proof of Delivery, Log Sheet & related transactions.",
+        "Developed a centralized tracking report covering all logistics operations."
+      ],
+      "images": [
+        
       ]
     }
   ],
