@@ -168,12 +168,8 @@
       "summary": "I love to cook, but I am not a great one!",
       "images": [
         {
-          "img_path": "https://picsum.photos/600/338?random=7",
-          "caption": "Image Caption 7"
-        },
-        {
-          "img_path": "https://picsum.photos/600/338?random=8",
-          "caption": "Image Caption 8"
+          "img_path": "portfolio_media/food.jpg",
+          "caption": ""
         }
       ]
     },
@@ -182,12 +178,12 @@
       "summary": "My library is full of self improvement books but I have a knack for Indian ancient-history",
       "images": [
         {
-          "img_path": "https://picsum.photos/600/338?random=9",
-          "caption": "Image Caption 9"
+          "img_path": "portfolio_media/book.png",
+          "caption": ""
         },
         {
-          "img_path": "https://picsum.photos/600/338?random=10",
-          "caption": "Image Caption 10"
+          "img_path": "portfolio_media/ancient_scriptures.png",
+          "caption": ""
         }
       ]
     }
