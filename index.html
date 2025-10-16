@@ -77,9 +77,13 @@
     .img-modal .modal-content {
       margin: auto;
       display: block;
-      max-width: 80%;
+      max-width: 90vw;       /* Use viewport width, fits better on phones */
+      max-height: 80vh;      /* Ensure it doesn’t overflow vertically */
+      width: auto;
+      height: auto;
       border-radius: 10px;
       box-shadow: 0 0 10px #000;
+      object-fit: contain;   /* Keeps aspect ratio without cropping */
     }
 
     .img-modal #caption {
