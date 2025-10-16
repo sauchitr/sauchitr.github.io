@@ -4,135 +4,106 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Site Info -->
     <title>Sawan Singh Parihar - Portfolio</title>
     <meta name="description" content="Sawan Singh Parihar - Experienced software engineer specialising in ERP implementations with expertise in manufacturing, retail, CRM, HR and logistics domains. Proficient in system configuration, process design, and integration of regulatory compliance features. Skilled at collaborating with international stakeholders, optimising workflows, and delivering scalable, high-performance solutions across diverse industries.">
     <meta name="author" content="Sawan Singh Parihar">
-
-    <!-- Open Graph Tags: The title of the page for social media sharing. It can match the title tag or be more descriptive. -->
     <meta property="og:title" content="Sawan Singh Parihar">
-
-    <!-- Open Graph Tags: Typically set to "website" for static sites or "article" for content-heavy pages. -->
     <meta property="og:type" content="website">
-
-    <!-- Open Graph Tags: The URL of the page, used to ensure link previews resolve to the correct page. -->
     <meta property="og:url" content="sauchitr.github.io/index_template.html">
-
-    <!-- Open Graph Tags: URL of an image that represents the page. Useful for link previews. -->
     <meta property="og:image" content="sauchitr.github.io/portfolio_media/profile.jpg">
-
-    <!-- Open Graph Tags: Provides an alternative text for the image to improve accessibility. -->
     <meta property="og:image:alt" content="Sawan Singh Parihar Profile Image">
 
-    <!-- Preconnect for Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Nunito:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <!-- Custom Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-          rel="stylesheet">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/modern_normalize.css" />
+    <link rel="stylesheet" href="css/modern_normalize.css">
     <link rel="stylesheet" href="css/html5bp.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <!-- Set a theme color that matches your website's primary color -->
     <meta name="theme-color" content="#fafafa">
-
-    <!-- Favicon for all browsers -->
     <link rel="icon" href="/favicon.ico" sizes="any">
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
-
-    <!-- Apple touch icon for iOS devices -->
     <link rel="apple-touch-icon" sizes="180x180" href="/icon.png">
-
-    <!-- Web app manifest for Progressive Web Apps -->
     <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Content Security Policy: Uncomment to enhance security by restricting where content can be loaded from (useful for preventing certain attacks like XSS). Update if adding external sources (e.g., Google Fonts, Bootstrap CDN, analytics, etc). -->
-    <!-- <meta http-equiv="Content-Security-Policy" content=" default-src 'self'; script-src 'self' code.jquery.com; style-src 'self' fonts.googleapis.com; font-src fonts.gstatic.com; img-src 'self' images.examplecdn.com; "> -->
-  </head>
-
-  <!-- Image Preview Modal -->
-  <div id="imgModal" class="img-modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="modalImg">
-    <div id="caption"></div>
-  </div>
-
-  <style>
-    .img-modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      inset: 0; /* shorthand for top/right/bottom/left: 0 */
-      background-color: rgba(0,0,0,0.8);
-
-      /* Use flexbox to center image */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem;
-    }
-
-    .img-modal .modal-content {
-      max-width: 90vw;      /* Responsive width (90% of viewport width) */
-      max-height: 85vh;     /* Prevent vertical overflow */
-      width: auto;
-      height: auto;
-      object-fit: contain;  /* Keep aspect ratio */
-      border-radius: 10px;
-      box-shadow: 0 0 10px #000;
-    }
-
-    .img-modal #caption {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      color: #fff;
-      padding: 8px 12px;
-      font-size: 1em;
-      text-align: center;
-      max-width: 90%;
-    }
-
-    .close {
-      position: absolute;
-      top: 15px;
-      right: 25px;
-      color: #fff;
-      font-size: 35px;
-      font-weight: bold;
-      cursor: pointer;
-      z-index: 1001;
-    }
-
-    .close:hover {
-      color: #ccc;
-    }
-
-    /* 📱 Mobile-specific tweaks */
-    @media (max-width: 768px) {
-      .img-modal .modal-content {
-        max-width: 95vw;
-        max-height: 80vh;
+    <style>
+      /* ---- Image Modal ---- */
+      .img-modal {
+        display: none; /* hidden by default */
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        background-color: rgba(0,0,0,0.85);
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        overflow: hidden;
       }
 
-      .close {
-        font-size: 30px;
-        top: 10px;
-        right: 15px;
+      .img-modal.open {
+        display: flex; /* use flex only when opened */
+      }
+
+      .img-modal .modal-content {
+        max-width: 90vw;
+        max-height: 85vh;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        transition: transform 0.3s ease;
       }
 
       .img-modal #caption {
-        font-size: 0.9em;
-        bottom: 10px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 1em;
+        text-align: center;
+        padding: 8px 12px;
+        max-width: 90%;
       }
-    }
-  </style>
 
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        color: #fff;
+        font-size: 35px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 1001;
+      }
+
+      .close:hover {
+        color: #ccc;
+      }
+
+      /* Responsive for phones */
+      @media (max-width: 768px) {
+        .img-modal .modal-content {
+          max-width: 95vw;
+          max-height: 80vh;
+        }
+
+        .close {
+          font-size: 30px;
+          top: 10px;
+          right: 15px;
+        }
+
+        .img-modal #caption {
+          font-size: 0.9em;
+          bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+  
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -159,6 +130,7 @@
 
 
   <body>
+    
     <header class="page-header">
       <div class="container">
         <div class="header-top flex-responsive">
@@ -614,5 +586,11 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <!-- Image Preview Modal -->
+    <div id="imgModal" class="img-modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
+      <div id="caption"></div>
+    </div>
   </body>
 </html>
