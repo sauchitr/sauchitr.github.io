@@ -178,7 +178,12 @@
             {% endif %}
             {% if summary %}<p class="header-summary">{{ summary }}</p>{% endif %}
           </div>
-        </div>
+          <button type="button">
+            <a href="resume.html" download="Resume_{{ name | replace(' ', '_') }}.html" class="btn-download">
+              Download Resume
+            </a>
+          </button>
+        </div>  
       </div>
     </header>
 
