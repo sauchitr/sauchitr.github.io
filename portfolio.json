@@ -96,12 +96,12 @@
     },
     {
       "title": "HOME CARE SERVICE",
-      "summary": "Frappe, ERPNext, Python, Vue.js, JavaScript, Appe",
+      "summary": "Frappe, ERPNext, Python, Vue.js, JavaScript",
       "url": "https://sample.com",
       "highlights": [
         "Implemented a complete ERP system for a homecare services business supporting elderly clients, integrating workforce management, client care, and operational workflows.",
         "Managed multi-role coordination and automation for attendants, nurses, and delivery staff, including membership-based billing, consolidated sales invoicing, and real-time service tracking.",
-        "Developed a mobile application for daily task tracking, timesheets, and geo-location-based visit logging and attendance monitoring to enhance field workforce efficiency."
+        "Developed a centralised dashboard for daily task tracking, timesheets, and geo-location-based visit logging and attendance monitoring to enhance field workforce efficiency."
       ],
       "images": [
         {
@@ -148,7 +148,7 @@
 
   "skills": {
     "lanuguages": ["Python", "JavaScript", "SQL"],
-    "frameworks/Libraries": ["Django", "Bootstrap", "Pandas", "Matplotlib", "Frappe", "ERPNext", "jQuery", "Vue.js", "Frappe HR", "Beautiful Soup", "Appe"],
+    "frameworks/Libraries": ["Django", "Bootstrap", "Pandas", "Matplotlib", "Frappe", "ERPNext", "jQuery", "Vue.js", "Frappe HR", "Beautiful Soup"],
     "tools/Platforms": ["Google Sheets", "Microsoft Office", "Git", "GitHub", "PyCharm", "Linux", "VSCode", "DBeaver", "HeidiSQL"],
     "databases": ["MySQL", "SQLite", "PostgreSQL", "MariaDB"]
 

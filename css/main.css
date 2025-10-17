@@ -471,3 +471,116 @@ blockquote {
     print-color-adjust: exact !important;
   }
 }
+
+
+/* =========================================
+   Image Modal Styles (moved from index_template.html)
+   ========================================= */
+.img-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.img-modal.open {
+  display: flex;
+}
+
+.img-modal .modal-content {
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.img-modal #caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 1em;
+  text-align: center;
+  padding: 8px 12px;
+  max-width: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close:hover {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .img-modal .modal-content {
+    max-width: 95vw;
+    max-height: 80vh;
+  }
+
+  .close {
+    font-size: 30px;
+    top: 10px;
+    right: 15px;
+  }
+
+  .img-modal #caption {
+    font-size: 0.9em;
+    bottom: 10px;
+  }
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem; /* smaller padding */
+  background: linear-gradient(135deg, #3399ff, #2673b8); /* softer blue */
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 0.9rem; /* slightly smaller text */
+  text-transform: uppercase;
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-download:hover {
+  background: linear-gradient(135deg, #2673b8, #1d4f7a);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+.btn-download:active {
+  transform: scale(0.97);
+}
+
+.btn-download .icon {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-download:hover .icon {
+  transform: translateY(2px);
+}

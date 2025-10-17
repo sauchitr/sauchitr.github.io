@@ -27,81 +27,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/icon.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <style>
-      /* ---- Image Modal ---- */
-      .img-modal {
-        display: none; /* hidden by default */
-        position: fixed;
-        inset: 0;
-        z-index: 1000;
-        background-color: rgba(0,0,0,0.85);
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        overflow: hidden;
-      }
-
-      .img-modal.open {
-        display: flex; /* use flex only when opened */
-      }
-
-      .img-modal .modal-content {
-        max-width: 90vw;
-        max-height: 85vh;
-        width: auto;
-        height: auto;
-        object-fit: contain;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0,0,0,0.5);
-        transition: transform 0.3s ease;
-      }
-
-      .img-modal #caption {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #fff;
-        font-size: 1em;
-        text-align: center;
-        padding: 8px 12px;
-        max-width: 90%;
-      }
-
-      .close {
-        position: absolute;
-        top: 15px;
-        right: 25px;
-        color: #fff;
-        font-size: 35px;
-        font-weight: bold;
-        cursor: pointer;
-        z-index: 1001;
-      }
-
-      .close:hover {
-        color: #ccc;
-      }
-
-      /* Responsive for phones */
-      @media (max-width: 768px) {
-        .img-modal .modal-content {
-          max-width: 95vw;
-          max-height: 80vh;
-        }
-
-        .close {
-          font-size: 30px;
-          top: 10px;
-          right: 15px;
-        }
-
-        .img-modal #caption {
-          font-size: 0.9em;
-          bottom: 10px;
-        }
-      }
-    </style>
+    
   </head>
   
 
@@ -178,11 +104,12 @@
             {% endif %}
             {% if summary %}<p class="header-summary">{{ summary }}</p>{% endif %}
           </div>
-          <button type="button">
-            <a href="resume.html" download="Resume_{{ name | replace(' ', '_') }}.html" class="btn-download">
-              Download Resume
-            </a>
-          </button>
+          <a href="https://drive.google.com/file/d/12vd39FfBX8a10LBpfzXjMsuyvKR1O16s/view?usp=drive_link"
+            target="_blank"
+            class="btn-download">
+            <span class="icon">⬇️</span> Download Resume
+          </a>
+
         </div>  
       </div>
     </header>

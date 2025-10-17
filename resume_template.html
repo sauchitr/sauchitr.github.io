@@ -91,7 +91,7 @@
             <section>
               <h2 class="section-heading">Work Experience</h2>
               {% for job in work_experience %}
-                <section>
+                <!-- <section> -->
                   <h3>
                     {% if job.url %}
                       {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a>
@@ -110,7 +110,7 @@
                   {% endif %}
                 </section>
               {% endfor %}
-            </section>
+            <!-- </section> -->
           {% endif %}
 
           {% if projects %}
