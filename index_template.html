@@ -146,7 +146,9 @@
                   {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
                   {% if job.highlights %}
                     <ul>
-                      {% for highlight in job.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                      {% for highlight in job.highlights %}
+                        <li>{{ highlight }}</li>
+                      {% endfor %}
                     </ul>
                   {% endif %}
                 </section>
