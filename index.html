@@ -46,6 +46,12 @@
           captionText.textContent = img.alt;
         });
       });
+    document.getElementById('scroll-to-resume').addEventListener('click', function() {
+      const target = document.getElementById('resume-download');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
 
       // Close modal on X click or background click
       closeBtn.onclick = () => modal.style.display = "none";
@@ -56,7 +62,11 @@
 
 
   <body>
-    
+    <button id="scroll-to-resume" class="btn-small-top">
+      <span class="icon">⬇️</span> Download Resume
+    </button>
+
+
     <header class="page-header">
       <div class="container">
         <div class="header-top flex-responsive">
@@ -134,11 +144,6 @@
             
             <p class="header-summary">Experienced software engineer specialising in ERP implementations with expertise in manufacturing, retail, CRM, HR and logistics domains. Proficient in system configuration, process design, and integration of regulatory compliance features. Skilled at collaborating with international stakeholders, optimising workflows, and delivering scalable, high-performance solutions across diverse industries.</p>
           </div>
-          <a href="https://drive.google.com/file/d/12vd39FfBX8a10LBpfzXjMsuyvKR1O16s/view?usp=drive_link"
-            target="_blank"
-            class="btn-download">
-            <span class="icon">⬇️</span> Download Resume
-          </a>
 
         </div>  
       </div>
@@ -510,6 +515,14 @@
         </aside>
       </div>
     </div>
+
+    <a id="resume-download" 
+      href="https://drive.google.com/file/d/12vd39FfBX8a10LBpfzXjMsuyvKR1O16s/view?usp=drive_link"
+      target="_blank"
+      class="btn-download">
+      <span class="icon">⬇️</span> Download Resume
+    </a>
+
 
     <footer class="page-footer">
       <div class="container">
